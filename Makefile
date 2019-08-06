@@ -12,4 +12,4 @@ install:
 
 clean:
 	rm -f HG-Git-Tool
-	rm -rf /usr/local/bin/HG-Git-Tool
+	rm -rf /usr/local/bin/HG-Git-Tool/

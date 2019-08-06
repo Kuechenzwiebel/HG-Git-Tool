@@ -32,6 +32,7 @@ int main(int argc, const char * argv[]) {
         return -1;
     }
     
+    system("git branch");
     system("git status");
     cout << "Do you want to precede? y/n\t";
     string input;
