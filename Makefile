@@ -11,5 +11,5 @@ install:
 	cp HG-Git-Tool/HG-Git-Tool /usr/local/bin/HG-Git-Tool
 
 clean:
-	rm -f HG-Git-Tool
-	rm -rf /usr/local/bin/HG-Git-Tool/
+	rm -f HG-Git-Tool/HG-Git-Tool
+	rm -f /usr/local/bin/HG-Git-Tool

@@ -11,6 +11,6 @@ Start the program in the repository with the commit message as the first paramet
 
 There is a makefile included. It is using g++, you might have to change it for you system. 
 When working on a Unix-like system you can also enter 'sudo make install' to add the tool to you command line, you can then call it anywhere with 'HG-Git-Tool "Commit message"'.
-Use 'make clean' to remove the executables. Currently it's impossible for the makefile to remove the executable in the /usr/local/bin so you have to remove it by yourself.
+Use 'make clean' to remove the executables. 
 
 Fun fact: this repository was pushed by the code provided.
