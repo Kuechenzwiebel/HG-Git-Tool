@@ -7,6 +7,12 @@ Start the program in the repository with the commit message as the first paramet
 
 ./HG-Git-Tool "Your example commit message"
 
+
+When writing "history" as the first flag the program will show you your git log. Example:
+
+./HG-Git-Tool history
+
+
 # Building
 
 There is a makefile included. It is using g++, you might have to change it for you system. 

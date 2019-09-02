@@ -32,20 +32,25 @@ int main(int argc, const char * argv[]) {
         return -1;
     }
     
-    system("git branch");
-    system("git status");
-    cout << "Do you want to precede? y/n\t";
-    string input;
-    cin >> input;
-    
-    if(input == "y") {
-        system("git add --all");
-        string commitMessage = "git commit -m ";
-        commitMessage.push_back('"');
-        commitMessage += argv[1];
-        commitMessage.push_back('"');
-        system(commitMessage.c_str());
-        system("git push");
+    if(string(argv[1]) == "history") {
+        system("git log --all --graph --oneline");
+    }
+    else {
+        system("git branch");
+        system("git status");
+        cout << "Do you want to precede? y/n\t";
+        string input;
+        cin >> input;
+        
+        if(input == "y") {
+            system("git add --all");
+            string commitMessage = "git commit -m ";
+            commitMessage.push_back('"');
+            commitMessage += argv[1];
+            commitMessage.push_back('"');
+            system(commitMessage.c_str());
+            system("git push");
+        }
     }
     
     return 0;
